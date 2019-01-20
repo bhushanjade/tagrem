@@ -10,7 +10,7 @@ import CreateUser from "./components/Users/CreateUser";
 
 const Home = () => (
     <div>
-        <h3>A simple web application using React.js and Redux.</h3>
+        <h3>A simple web application using React.js and Redux with Reactstrap (Simple React Bootstrap 4 components)</h3>
         <p>Routes <code>/users</code> List All Users, In paginated table.</p>
         <p>Routes <code>/create_user</code>Create User form.</p>
     </div>
