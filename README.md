@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+A simple web application using React.js and Redux.
+
+# Dependencies  
+ 1. React
+ 2. Redux
+ 3. React Router
+ 4. [Reactstrap](https://reactstrap.github.io/) -> Simple React Bootstrap 4 components
+ 5. Underscore (used for debouncing on keyup event in textbox. )
+ 6. [API Endpoints](https://gorest.co.in)
+
 ## Available Scripts
 
 In the project directory, you can run:
