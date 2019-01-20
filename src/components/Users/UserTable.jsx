@@ -44,8 +44,8 @@ UserTable.propTypes = {
             name: propTypes.string.isRequired,
             email: propTypes.string.isRequired,
             gender: propTypes.string.isRequired,
-            phone: propTypes.string.isRequired,
-            dob: propTypes.string.isRequired,
+            phone: propTypes.string,
+            dob: propTypes.string,
         })
     ),
 };

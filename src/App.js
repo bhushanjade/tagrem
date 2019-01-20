@@ -8,6 +8,13 @@ import ListUsers from './components/Users/ListUsers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CreateUser from "./components/Users/CreateUser";
 
+const Home = () => (
+    <div>
+        <h3>A simple web application using React.js and Redux.</h3>
+        <p>Routes <code>/users</code> List All Users, In paginated table.</p>
+        <p>Routes <code>/create_user</code>Create User form.</p>
+    </div>
+);
 
 
 const NoMatch = () => (
@@ -22,7 +29,7 @@ class App extends Component {
             <Router>
                 <Switch>
                     <Layout path="/users" component={ListUsers}/>
-                    <Layout exact path="/" component={CreateUser}/>
+                    <Layout exact path="/" component={Home}/>
                     <Layout path="/create_user" component={CreateUser}/>
                     <Route component={NoMatch} />
                 </Switch>

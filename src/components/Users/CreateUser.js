@@ -4,6 +4,7 @@ import InputField from '../FormComponents/InputField';
 import RadioButton from '../FormComponents/RadioButton';
 import {errorHandler, responseHandler} from '../../helpers/responseHandlers';
 import {UncontrolledAlert} from 'reactstrap';
+import config from '../../config';
 
 const formFields = ['first_name', 'last_name', 'email', 'gender'];
 
@@ -40,15 +41,11 @@ export default class CreateUser extends React.Component {
 
         if (errorFields.length === 0) {
             let respObj = {};
-            // formData = {...formData,...{'_format' : 'json', 'access-token':'QeUtQCgdsAAeCdFbhUz1h6-HdVJ30zv8xMYR'}};
             const requestOptions = {
                 method: 'POST',
-                // redirect: 'follow',
-                // credentials: "same-origin",
                 headers: {
-                    'Authorization': 'Bearer QeUtQCgdsAAeCdFbhUz1h6-HdVJ30zv8xMYR',
-                    // "access-control-allow-origin": "localhost",
-                    // "access-control-allow-credentials": "true",
+                    'Authorization': 'Bearer ' + config.access_token,
+
                     "Content-Type" : "application/json"
                 },
                 body: JSON.stringify(formData),
