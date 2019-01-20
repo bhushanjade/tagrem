@@ -55,7 +55,6 @@ class ListUsers extends Component {
                                   handlePagination={this.handlePagination}/>
 
                 <UserTable users={users}/>
-                <UserTable users={users}/>
 
                 <TablePagination totalPages={totalPages} totalCount={totalCount} currentPage={currentPage}
                                  handlePagination={this.handlePagination}/>
