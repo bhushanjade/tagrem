@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# [Demo](https://tagrem.herokuapp.com/)
 A simple web application using React.js and Redux.
 
 # Dependencies  
